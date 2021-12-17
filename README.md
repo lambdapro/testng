@@ -51,27 +51,29 @@ cd android/testng-examples
 mvn clean
 ```
 
-Or,
-
-To install the dependencies for iOS tests, run :
-
-```sh
-cd ios/testng-examples
-mvn clean
-```
 
 ### **Run first test :**
 
 - Switch to `run_first_test` directory under [Android examples](android/testng-examples) 
+```sh
+cd android/testng-examples
+mvn test -P first
+```
 
 ### **Speed up test execution with parallel testing :**
 
 - Switch to `run_parallel_test` directory under [Android examples](android/testng-examples/) 
-
+```sh
+cd ios/testng-examples
+mvn test -P parallel
+```
 ### **Use Local testing for apps that access resources hosted in development or testing environments :**
 
 - Switch to `run_local_test` directory under [Android examples](android/testng-examples/) or [iOS examples](ios/testng-examples/)
-
+```sh
+cd android/testng-examples
+mvn test -P local
+```
 **Note**: If you are facing any issues, refer [Getting Help section](#Getting-Help)
 
 
